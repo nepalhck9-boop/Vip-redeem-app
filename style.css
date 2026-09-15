@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 50% 0%, #6b4b00 0%, #181000 28%, #030303 70%);
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  max-width: 720px;
+  margin: auto;
+  min-height: 100vh;
+  background:
+    linear-gradient(180deg, rgba(255,193,7,.12), transparent 35%),
+    #050505;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 22px 20px;
+  border-bottom: 2px solid #f6c400;
+  background: linear-gradient(90deg, #080808, #241b00, #080808);
+  box-shadow: 0 3px 25px rgba(255,200,0,.35);
+}
+
+.logo {
+  width: 58px;
+  height: 58px;
+  border-radius: 15px;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #000;
+  background: linear-gradient(135deg, #fff700, #ffb300, #ffe45c);
+  border: 2px solid #fff19a;
+  box-shadow:
+    0 0 10px #ffd000,
+    0 0 30px rgba(255,190,0,.7);
+}
+
+header h2 {
+  margin: 0;
+  color: #fff;
+  text-shadow: 0 0 12px #ffd000;
+}
+
+header span {
+  color: #ffd21c;
+  font-size: 11px;
+  letter-spacing: 3px;
+}
+
+.secure {
+  margin-left: auto;
+  padding: 9px 15px;
+  border: 1px solid #ffd21c;
+  border-radius: 20px;
+  color: #ffd21c;
+  box-shadow: 0 0 12px rgba(255,210,0,.5);
+}
+
+/* MAIN */
+main {
+  padding: 45px 24px;
+}
+
+.vip-title {
+  text-align: center;
+  color: #ffd21c;
+  letter-spacing: 9px;
+  font-size: 13px;
+  text-shadow: 0 0 15px #ffb300;
+}
+
+h1 {
+  text-align: center;
+  font-size: 35px;
+  margin: 20px 0;
+  background: linear-gradient(90deg,#fff,#ffe45c,#ffb300,#fff);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 25px rgba(255,190,0,.25);
+}
+
+.sub {
+  text-align: center;
+  color: #d0d0d0;
+  margin-bottom: 35px;
+}
+
+/* GOLD CARDS */
+.card {
+  margin: 20px 0;
+  padding: 28px;
+  border: 2px solid #e8b900;
+  border-radius: 20px;
+
+  background:
+    linear-gradient(145deg,
+      rgba(255,215,0,.15),
+      rgba(25,20,5,.96),
+      rgba(255,180,0,.08));
+
+  box-shadow:
+    inset 0 0 25px rgba(255,190,0,.08),
+    0 0 12px rgba(255,190,0,.35),
+    0 0 35px rgba(255,170,0,.12);
+}
+
+.card h2 {
+  color: #ffe45c;
+  text-shadow: 0 0 12px #d99d00;
+}
+
+.card p {
+  color: #d0d0d0;
+}
+
+/* PAYMENT */
+.payment {
+  border-color: #ffd000;
+  box-shadow:
+    0 0 15px rgba(255,210,0,.55),
+    inset 0 0 30px rgba(255,190,0,.1);
+}
+
+.payment h3 {
+  color: #fff000;
+  text-align: center;
+  text-shadow: 0 0 15px #ffb300;
+}
+
+/* QR */
+.qr-box {
+  width: min(330px, 90%);
+  margin: 25px auto;
+  padding: 12px;
+  background: #fff;
+  border-radius: 18px;
+
+  border: 4px solid #ffd21c;
+
+  box-shadow:
+    0 0 10px #fff000,
+    0 0 30px #ffb300,
+    0 0 60px rgba(255,180,0,.55);
+}
+
+.qr-box img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.amount {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  color: #ffe000;
+  text-shadow:
+    0 0 8px #ffb300,
+    0 0 25px #ff9900;
+}
+
+/* OFFER */
+.offer {
+  text-align: center;
+}
+
+.label {
+  color: #ffd21c;
+  letter-spacing: 7px;
+  font-size: 12px;
+}
+
+.old {
+  margin-top: 20px;
+  color: #888;
+  text-decoration: line-through;
+}
+
+.price {
+  font-size: 60px;
+  font-weight: 900;
+
+  background: linear-gradient(
+    180deg,
+    #fff700,
+    #ffd000,
+    #ff9900
+  );
+
+  -webkit-background-clip: text;
+  color: transparent;
+
+  filter: drop-shadow(0 0 12px #ffb300);
+}
+
+.offer strong {
+  color: #ffe45c;
+}
+
+/* TIMER */
+#timer {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 11px 25px;
+
+  color: #000;
+  font-weight: bold;
+
+  border: 2px solid #fff000;
+  border-radius: 30px;
+
+  background: linear-gradient(
+    90deg,
+    #fff000,
+    #ffb300,
+    #ffe45c
+  );
+
+  box-shadow:
+    0 0 10px #ffd000,
+    0 0 25px rgba(255,180,0,.6);
+}
+
+/* DISCLAIMER */
+.disclaimer {
+  border-color: #9f7900;
+}
+
+.disclaimer h3 {
+  color: #ffd21c;
+  letter-spacing: 3px;
+}
+
+/* FOOTER */
+footer {
+  padding: 30px;
+  text-align: center;
+  color: #9d8b50;
+  border-top: 1px solid #6d5200;
+}
+
+/* MOBILE */
+@media(max-width:500px) {
+  main {
+    padding: 35px 16px;
+  }
+
+  h1 {
+    font-size: 29px;
+  }
+
+  .secure {
+    display: none;
+  }
+}
